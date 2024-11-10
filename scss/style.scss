@@ -1,0 +1,141 @@
+@use 'sass:color';
+
+$primary: #00C0DB;
+$secondary: color.adjust($primary, $lightness: 30%);
+$colorTexto: #333;
+$background: color.adjust($primary, $lightness: 60%);
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $background;
+  color: $colorTexto;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: $primary;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: $secondary;
+    transform: scale(1.05);
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+
+  &:hover {
+    background-color: color.adjust($primary, $lightness: -10%);
+  }
+}
+
+.offcanvas {
+  background-color: $primary;
+  color: #fff;
+
+  .offcanvas-header {
+    border-bottom: 1px solid color.scale($primary, $lightness: -20%);
+  }
+
+  .btn-close {
+    color: #fff;
+    opacity: 0.8;
+
+    &:hover {
+      color: color.scale($primary, $lightness: -30%);
+    }
+  }
+
+  .list-group-item {
+    background-color: transparent;
+    border: none;
+
+    .btn {
+      color: #fff;
+      background-color: color.scale($primary, $lightness: -10%);
+      border: 1px solid color.scale($primary, $lightness: -20%);
+
+      &:hover {
+        background-color: color.scale($primary, $lightness: -30%);
+      }
+    }
+  }
+}
+
+#tipoPrediccion {
+  .btn-group {
+    margin-top: 15px;
+
+    .btn-outline-primary {
+      color: $primary;
+      border-color: $primary;
+
+      &:checked,
+      &:hover {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#tiempoActual {
+  background-color: $secondary;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+#tablaResultados {
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+
+    th, td {
+      padding: 10px;
+      border: 1px solid color.scale($primary, $lightness: -30%);
+      text-align: center;
+    }
+
+    th {
+      background-color: $primary;
+      color: #fff;
+    }
+
+    td {
+      background-color: $secondary;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: color.scale($secondary, $lightness: -10%);
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}

@@ -1,0 +1,118 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: hsl(187.397260274, 100%, 102.9411764706%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #00C0DB;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+  background-color: rgb(117, 237.9863013699, 255);
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #00C0DB;
+}
+.btn-primary:hover {
+  background-color: rgb(0, 147.2876712329, 168);
+}
+
+.offcanvas {
+  background-color: #00C0DB;
+  color: #fff;
+}
+.offcanvas .offcanvas-header {
+  border-bottom: 1px solid rgb(0, 153.6, 175.2);
+}
+.offcanvas .btn-close {
+  color: #fff;
+  opacity: 0.8;
+}
+.offcanvas .btn-close:hover {
+  color: rgb(0, 134.4, 153.3);
+}
+.offcanvas .list-group-item {
+  background-color: transparent;
+  border: none;
+}
+.offcanvas .list-group-item .btn {
+  color: #fff;
+  background-color: rgb(0, 172.8, 197.1);
+  border: 1px solid rgb(0, 153.6, 175.2);
+}
+.offcanvas .list-group-item .btn:hover {
+  background-color: rgb(0, 134.4, 153.3);
+}
+
+#tipoPrediccion .btn-group {
+  margin-top: 15px;
+}
+#tipoPrediccion .btn-group .btn-outline-primary {
+  color: #00C0DB;
+  border-color: #00C0DB;
+}
+#tipoPrediccion .btn-group .btn-outline-primary:checked, #tipoPrediccion .btn-group .btn-outline-primary:hover {
+  background-color: #00C0DB;
+  color: #fff;
+}
+
+#tiempoActual {
+  background-color: rgb(117, 237.9863013699, 255);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#tablaResultados table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+#tablaResultados table th, #tablaResultados table td {
+  padding: 10px;
+  border: 1px solid rgb(0, 134.4, 153.3);
+  text-align: center;
+}
+#tablaResultados table th {
+  background-color: #00C0DB;
+  color: #fff;
+}
+#tablaResultados table td {
+  background-color: rgb(117, 237.9863013699, 255);
+  color: #fff;
+}
+#tablaResultados table tr:nth-child(even) {
+  background-color: rgb(79.8, 233.4, 255);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #00C0DB;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
